@@ -1,0 +1,36 @@
+.default{
+    margin: 1em;
+}
+
+h1.default{
+    margin: .5em;
+}
+
+textarea{
+    width: 40em;
+    height: 25em;
+}
+
+input{
+    width: 40em;
+}
+
+.mainflex{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.flexcont{
+    display: flex;
+    align-items: center;
+}
+
+.picture{
+    width: 17em;
+    height: 28em;
+    background-color: aqua;
+    margin: .5em;
+}
