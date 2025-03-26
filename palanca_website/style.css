@@ -8,7 +8,9 @@
 }
 
 body {
-    background-color: #320710;
+    margin: 0px;
+    background-color: #28030B;
+    padding-bottom: 61px;
     min-height: 100vh;
     max-width: 100vw;
 

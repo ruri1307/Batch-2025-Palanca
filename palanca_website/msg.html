@@ -4,25 +4,30 @@
     <link rel="stylesheet" href="msgstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div>
-            <img id='logo' src="./imgs/batchlogo.jpg" alt="Bandaranngan Batch Logo">
-        <h3 class="italtext">palanca '25</h3>
+    <nav id="navbar">
+        <div class="navlogo">
+            <img src="./imgs/batchlogo.jpg" alt="Bandaranggan Batch Logo" id="logo">
+            <p class="nav-text">palanca '25</p>
         </div>
-        <h3 class="italtext" id='counter'></h3>
+        <p class="nav-text" id="days"></p>
+    </nav>
     </div>
-    <div class="mainflex">
+    <div class="main">
         <div class="picture"></div>
-        <div class="inputcont">
-            <h1 class="italtext  ">para sa pag-asa ng bayan...</h1>
-            <p class="poptext">Name</p>
+        <div class="hero">
+            <h1 class="hero-text">para sa pag-asa ng bayan...</h1>
+            <p class="poppins">Name</p>
             <input type="text">
-            <p class="poptext">Message</p>
-            <textarea name="palancamsg" id="msgarea"></textarea>
-            <input type = "submit" value="Send">
+            <p class="poppins">Message</p>
+            <textarea name="palanca-msg"></textarea>
+            <input type="submit" value="Send">
         </div>
     </div>
     <script src="./msgscript.js"></script>

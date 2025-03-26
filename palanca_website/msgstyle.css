@@ -1,61 +1,67 @@
-body{
+* {
+    font-family: "Lora", "Cambria Math", 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.poppins {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
     margin: 0px;
     background-color: #28030B;
     padding-bottom: 61px;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
-.header{
-    display: flex;
-    padding: 16px 35px;
-    background-color: #320710;
-    margin: 0px;
-    justify-content: space-between;
+#navbar {
     position: sticky;
+    top: 0px;
+    padding: 12px 24px;
+
+    background-color: #320710;
+
+    display: flex;
+    gap: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header>div{
-    display: inherit;
+#navbar > div {
+    display: flex;
+    gap: 4px;
+
+    justify-content: space-between;
+    align-items: center;
 }
 
-#logo{
-    width: 3.125em;
-    height: 3.125em;
+#logo {
+    width: 50px;
+    height: 50px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 17.5px;
+    margin-right: 14px;
+
     border-radius: 50%;
 }
 
-.italtext{
+.nav-text {
+    font-size: 18px;
     color: #DC9B4B;
-    font-family: "Lora", serif;
-    font-weight: 483;
+
+    font-weight: 500;
     font-style: oblique;
-    font-size: 17px;
 }
 
-h1.italtext{
-    color: #DC9B4B;
-    font-family: "Lora", serif;
-    font-weight: 550;
-    font-style: oblique;
-    font-size: 36px;
-    margin-top: 0px;
-    margin-bottom: 22px;
-}
-
-#counter{
-    text-align: right;
-}
-
-.mainflex{
+.main {
     width: fit-content;
     height: fit-content;
     margin: auto;
     display: flex;
 }
 
-.picture{
+.picture {
     width: 533.71px;
     height: 800px;
     background-color: aqua;
@@ -63,7 +69,7 @@ h1.italtext{
     margin-right: 41px;
 }
 
-.inputcont{
+.hero {
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
@@ -71,19 +77,23 @@ h1.italtext{
     padding-left: 107px;
 }
 
-.poptext{
+.hero-text {
+    color: #DC9B4B;
+
+    font-weight: 500;
+    font-style: oblique;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #B17071;
-    font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
 }
 
-p{
-    margin: 10px, 0px;
-}
-
-input[type="text"]{
+input[type="text"] {
     width: 400px;
     height: 48px;
     background-color: #38090F;
@@ -94,7 +104,7 @@ input[type="text"]{
     font-size: 16px;
 }
 
-textarea{
+textarea {
     width: 400px;
     height: 320px;
     background-color: #38090F;
@@ -107,7 +117,7 @@ textarea{
     resize: none;
 }
 
-input[type='submit']{
+input[type='submit'] {
     width: 443px;
     height: 42px;
     color: #28030B;
