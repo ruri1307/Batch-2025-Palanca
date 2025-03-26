@@ -23,10 +23,9 @@ body {
     top: 0px;
     padding: 12px 24px;
 
-    background-color: #28030B;
+    background-color: #320710;
 
     display: flex;
-    gap: auto;
     justify-content: space-between;
     align-items: center;
 }
