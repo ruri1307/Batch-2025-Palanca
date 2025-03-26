@@ -1,14 +1,16 @@
 body{
     margin: 0px;
-    background-color: #38090F;
+    background-color: #28030B;
+    padding-bottom: 61px;
 }
 
 .header{
     display: flex;
-    padding: 1em;
-    background-color: #530f1e;
+    padding: 16px 35px;
+    background-color: #320710;
     margin: 0px;
     justify-content: space-between;
+    position: sticky;
 }
 
 .header>div{
@@ -20,51 +22,93 @@ body{
     height: 3.125em;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 14px;
+    margin-right: 17.5px;
+    border-radius: 50%;
 }
 
-.text{
+.italtext{
     color: #DC9B4B;
     font-family: "Lora", serif;
+    font-weight: 483;
+    font-style: oblique;
+    font-size: 17px;
+}
+
+h1.italtext{
+    color: #DC9B4B;
+    font-family: "Lora", serif;
+    font-weight: 550;
+    font-style: oblique;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 22px;
 }
 
 #counter{
     text-align: right;
 }
 
-.default{
-    margin: 1em;
-}
-
-h1.default{
-    margin: .5em;
-}
-
-textarea{
-    width: 40em;
-    height: 25em;
-}
-
-input{
-    width: 40em;
-}
-
 .mainflex{
     width: fit-content;
     height: fit-content;
     margin: auto;
-    align-items: center;
-    justify-items: center;
-}
-
-.flexcont{
     display: flex;
-    align-items: center;
 }
 
 .picture{
-    width: 17em;
-    height: 28em;
+    width: 533.71px;
+    height: 800px;
     background-color: aqua;
-    margin: .5em;
+    margin-top: 63px;
+    margin-right: 41px;
+}
+
+.inputcont{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    padding-top: 177px;
+    padding-left: 107px;
+}
+
+.poptext{
+    color: #B17071;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p{
+    margin: 10px, 0px;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 48px;
+    background-color: #38090F;
+    border: #B17071 1.5px solid;
+    border-radius: 8px;
+    padding: 0px 20px;
+    color: #B17071;
+    font-size: 16px;
+}
+
+textarea{
+    width: 400px;
+    height: 320px;
+    background-color: #38090F;
+    border: #B17071 1.5px solid;
+    border-radius: 8px;
+    padding: 0px 20px;
+    color: #B17071;
+    font-size: 16px;
+    margin-bottom: 48px;
+    resize: none;
+}
+
+input[type='submit']{
+    width: 443px;
+    height: 42px;
+    color: #28030B;
 }
