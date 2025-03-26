@@ -1,3 +1,37 @@
+body{
+    margin: 0px;
+    background-color: #38090F;
+}
+
+.header{
+    display: flex;
+    padding: 1em;
+    background-color: #530f1e;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.header>div{
+    display: inherit;
+}
+
+#logo{
+    width: 3.125em;
+    height: 3.125em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 14px;
+}
+
+.text{
+    color: #DC9B4B;
+    font-family: "Lora", serif;
+}
+
+#counter{
+    text-align: right;
+}
+
 .default{
     margin: 1em;
 }

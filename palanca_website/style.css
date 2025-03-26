@@ -1,3 +1,39 @@
+body{
+    margin: 0px;
+    background-color: #38090F;
+}
+
+.header{
+    display: flex;
+    padding: 1em;
+    background-color: #530f1e;
+    margin: 0px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+.header>div{
+    display: inherit;
+}
+
+#logo{
+    width: 3.125em;
+    height: 3.125em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 14px;
+}
+
+.text{
+    color: #DC9B4B;
+    font-family: "Lora", serif;
+}
+
+#counter{
+    text-align: right;
+}
+
 .maincont{
     margin-left: auto;
     margin-right: auto;
@@ -5,6 +41,7 @@
 }
 
 h1{
+    margin-top: 90px;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -12,10 +49,30 @@ h1{
 .headcont{
     display: flex;
     justify-content: center;
+    height: fit-content;
 }
 
 input{
-    margin: 1em;
+    margin: 0em 1em;
+    margin-top: 36px;
+    margin-bottom: 55px;
+    border-radius: 8px;
+}
+
+#searchbar{
+    height: 46px;
+    width: 397px;
+    padding: 0px 20px;
+    background-color: #38090F;
+    color: #B17071;
+    border-color: #B17071;
+    border-width: .5px;
+    font-size: 15;
+}
+
+#searchbtn{
+    width: 112px;
+    color: #28030B;
 }
 
 .cardcont{
@@ -24,9 +81,9 @@ input{
 }
 
 .cardpresets{
-    width: 6.3em;
-    height: 10em;
-    margin: .5em;
+    width: 133px;
+    height: 200px;
+    margin: 4px;
 }
 
 .card{
