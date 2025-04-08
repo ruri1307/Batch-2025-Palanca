@@ -136,4 +136,5 @@ main {
 
     background-color: lime;
     border-radius: 8px;
+    object-fit: cover;
 }
