@@ -5,9 +5,10 @@ timeTillGrad = Math.round((graduationDate-currentDate)/(1000 * 60 * 60 * 24));
 document.getElementById('days').innerText = (String(timeTillGrad) + ' days...');
 
 const cardlist = document.getElementsByClassName('card');
+const hoverlist = document.getElementsByClassName('tooltip-text');
 const namelist = [
     'ALBARRACIN KARL GABRIEL D.',
-    'ALCOMENDRAS, XHUN EXHAEL Y.',
+    'ALCOMENDRAS XHUN EXHAEL Y.',
     'ARSHAD ROOHI A.',
     'BALILI JIGS J.',
     'BARIRING ANGELICA SHANE O.',
@@ -98,17 +99,21 @@ const namelist = [
 for (let index = 0; index < cardlist.length; index++) {
 
     const element = cardlist[index];
+    const element_tooltip = hoverlist[index];
 
     function messageRedirect(){
         console.log(element.id);
-        window.location = "./msg.html";
+        window.location = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
     }
-
+    
+    element.setAttribute("alt", namelist[index]);
+    element_tooltip.innerText = namelist[index].slice(0, (namelist[index].length) - 2);
     element.addEventListener('click', messageRedirect);
 }
 
-const searchbtn = document.getElementById('searchbtn');
-const searchbar = document.getElementById('searchbar');
+const searchbtn = document.getElementById('search-btn');
+const searchbar = document.getElementById('search-bar');
+
 function search(){
     match = ''
     index = 0;
