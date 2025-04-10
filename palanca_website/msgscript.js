@@ -4,8 +4,6 @@ timeTillGrad = Math.round((graduationDate-currentDate)/(1000 * 60 * 60 * 24));
 
 document.getElementById('days').innerText = (String(timeTillGrad) + ' days...');
 
-const cardlist = document.getElementsByClassName('card');
-const hoverlist = document.getElementsByClassName('tooltip-text');
 const namelist = [
     'ALBARRACIN KARL GABRIEL D.',
     'ALCOMENDRAS XHUN EXHAEL Y.',
@@ -96,40 +94,11 @@ const namelist = [
     'YANKIN MARY MARGARET A.'
 ];
 
-for (let index = 0; index < cardlist.length; index++) {
+const card_number = document.location.href.split('?')['1'].split('&')[0].split('=')[1];
 
-    const element = cardlist[index];
-    const element_tooltip = hoverlist[index];
+const img_container = document.getElementById("settable-img");
 
-    function messageRedirect(){
-        console.log(element.id);
-        window.location = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
-    }
-    
-    element.setAttribute("alt", namelist[index]);
-    element_tooltip.innerText = namelist[index].slice(0, (namelist[index].length) - 2);
-    element.addEventListener('click', messageRedirect);
-}
+img_container.setAttribute("src", "./imgs/" + String(card_number) + ".jpg");
+img_container.setAttribute("alt", namelist[card_number - 1])
 
-const searchbtn = document.getElementById('search-btn');
-const searchbar = document.getElementById('search-bar');
-
-function search(){
-    match = ''
-    index = 0;
-    for (index = 0; index < namelist.length; index++){
-        if (namelist[index].includes(searchbar.value.toUpperCase())){
-            match = searchbar.value;
-            break;
-        }
-    }
-    index++;
-    if (index != 0 && match !=''){
-        window.location.hash = 'card' + String(index);
-    } else {
-        alert('Not Found!');
-    }
-}
-
-searchbtn.addEventListener('click', search);
-
+console.log(card_number);

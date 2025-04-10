@@ -3,112 +3,381 @@
 <head>
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <div class="maincont">
-        <h1>para sa karalangan...</h1>
-        <div class="headcont">
-            <input id = "searchbar" type="text"><input id="searchbtn" type="button" value="Search">
+    <nav id="navbar">
+        <div class="nav-logo">
+            <img id="logo" src="./imgs/batchlogo.jpg" alt="Bandaranngan Batch Logo">
+            <p class="nav-text">palanca '25</p>
         </div>
-        <div class="cardcont">
-            <div class="card cardpresets col1" id = 'card1'></div>
-            <div class="card cardpresets col2" id = 'card2'></div>
-            <div class="card cardpresets col3" id = 'card3'></div>
-            <div class="card cardpresets col4" id = 'card4'></div>
-            <div class="card cardpresets col5" id = 'card5'></div>
-            <div class="card cardpresets col6" id = 'card6'></div>
-            <div class="card cardpresets col7" id = 'card7'></div>
-            <div class="card cardpresets col8" id = 'card8'></div>
-            <div class="card cardpresets col9" id = 'card9'></div>
-
-            <div class="card cardpresets col1" id = 'card10'></div>
-            <div class="card cardpresets col2" id = 'card11'></div>
-            <div class="card cardpresets col3" id = 'card12'></div>
-            <div class="card cardpresets col4" id = 'card13'></div>
-            <div class="card cardpresets col5" id = 'card14'></div>
-            <div class="card cardpresets col6" id = 'card15'></div>
-            <div class="card cardpresets col7" id = 'card16'></div>
-            <div class="card cardpresets col8" id = 'card17'></div>
-            <div class="card cardpresets col9" id = 'card18'></div>
-
-            <div class="card cardpresets col1" id = 'card19'></div>
-            <div class="card cardpresets col2" id = 'card20'></div>
-            <div class="card cardpresets col3" id = 'card21'></div>
-            <div class="card cardpresets col4" id = 'card22'></div>
-            <div class="card cardpresets col5" id = 'card23'></div>
-            <div class="card cardpresets col6" id = 'card24'></div>
-            <div class="card cardpresets col7" id = 'card25'></div>
-            <div class="card cardpresets col8" id = 'card26'></div>
-            <div class="card cardpresets col9" id = 'card27'></div>
-
-            <div class="card cardpresets col1" id = 'card28'></div>
-            <div class="card cardpresets col2" id = 'card39'></div>
-            <div class="card cardpresets col3" id = 'card30'></div>
-            <div class="card cardpresets col4" id = 'card31'></div>
-            <div class="card cardpresets col5" id = 'card32'></div>
-            <div class="card cardpresets col6" id = 'card33'></div>
-            <div class="card cardpresets col7" id = 'card34'></div>
-            <div class="card cardpresets col8" id = 'card35'></div>
-            <div class="card cardpresets col9" id = 'card36'></div>
-
-            <div class="card cardpresets col1" id = 'card37'></div>
-            <div class="card cardpresets col2" id = 'card38'></div>
-            <div class="card cardpresets col3" id = 'card39'></div>
-            <div class="card cardpresets col4" id = 'card40'></div>
-            <div class="card cardpresets col5" id = 'card41'></div>
-            <div class="card cardpresets col6" id = 'card42'></div>
-            <div class="card cardpresets col7" id = 'card43'></div>
-            <div class="card cardpresets col8" id = 'card44'></div>
-            <div class="card cardpresets col9" id = 'card45'></div>
-
-            <div class="card cardpresets col1" id = 'card46'></div>
-            <div class="card cardpresets col2" id = 'card47'></div>
-            <div class="card cardpresets col3" id = 'card48'></div>
-            <div class="card cardpresets col4" id = 'card49'></div>
-            <div class="card cardpresets col5" id = 'card50'></div>
-            <div class="card cardpresets col6" id = 'card51'></div>
-            <div class="card cardpresets col7" id = 'card52'></div>
-            <div class="card cardpresets col8" id = 'card53'></div>
-            <div class="card cardpresets col9" id = 'card54'></div>
-
-            <div class="card cardpresets col1" id = 'card55'></div>
-            <div class="card cardpresets col2" id = 'card56'></div>
-            <div class="card cardpresets col3" id = 'card57'></div>
-            <div class="card cardpresets col4" id = 'card58'></div>
-            <div class="card cardpresets col5" id = 'card59'></div>
-            <div class="card cardpresets col6" id = 'card60'></div>
-            <div class="card cardpresets col7" id = 'card61'></div>
-            <div class="card cardpresets col8" id = 'card62'></div>
-            <div class="card cardpresets col9" id = 'card63'></div>
-
-            <div class="card cardpresets col1" id = 'card64'></div>
-            <div class="card cardpresets col2" id = 'card65'></div>
-            <div class="card cardpresets col3" id = 'card66'></div>
-            <div class="card cardpresets col4" id = 'card67'></div>
-            <div class="card cardpresets col5" id = 'card68'></div>
-            <div class="card cardpresets col6" id = 'card69'></div>
-            <div class="card cardpresets col7" id = 'card70'></div>
-            <div class="card cardpresets col8" id = 'card71'></div>
-            <div class="card cardpresets col9" id = 'card72'></div>
-
-            <div class="card cardpresets col1" id = 'card73'></div>
-            <div class="card cardpresets col2" id = 'card74'></div>
-            <div class="card cardpresets col3" id = 'card75'></div>
-            <div class="card cardpresets col4" id = 'card76'></div>
-            <div class="card cardpresets col5" id = 'card77'></div>
-            <div class="card cardpresets col6" id = 'card78'></div>
-            <div class="card cardpresets col7" id = 'card79'></div>
-            <div class="card cardpresets col8" id = 'card80'></div>
-            <div class="card cardpresets col9" id = 'card81'></div>
-
-            <div class="card cardpresets col1" id = 'card82'></div>
-            <div class="card cardpresets col2" id = 'card83'></div>
-            <div class="card cardpresets col3" id = 'card84'></div>
-            <div class="card cardpresets col4" id = 'card85'></div>
-            <div class="card cardpresets col5" id = 'card86'></div>
-            <div class="card cardpresets col6" id = 'card87'></div>
-
-    </div>
+        <p id="days" class="nav-text"></p>
+    </nav>
+    <main class="main">
+        <div class="hero">
+            <h1 class="hero-text">para sa karalangan...</h1>
+            <div class="search-cont">
+                <input class="poppins" id="search-bar" type="text">
+                <input class="poppins" id="search-btn" type="button" value="Search">
+            </div>
+        </div>
+        <div class="card-cont">
+            <div class="tooltip-container">
+                <img src="./imgs/1.jpg" alt="" class="card" id="card1" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/2.jpg" alt="" class="card" id="card2" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/3.jpg" alt="" class="card" id="card3" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/4.jpg" alt="" class="card" id="card4" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/5.jpg" alt="" class="card" id="card5" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/6.jpg" alt="" class="card" id="card6" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/7.jpg" alt="" class="card" id="card7" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/8.jpg" alt="" class="card" id="card8" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/9.jpg" alt="" class="card" id="card9" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/10.jpg" alt="" class="card" id="card10" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/11.jpg" alt="" class="card" id="card11" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/12.jpg" alt="" class="card" id="card12" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/13.jpg" alt="" class="card" id="card13" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/14.jpg" alt="" class="card" id="card14" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/15.jpg" alt="" class="card" id="card15" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/16.jpg" alt="" class="card" id="card16" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/17.jpg" alt="" class="card" id="card17" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/18.jpg" alt="" class="card" id="card18" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/19.jpg" alt="" class="card" id="card19" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/20.jpg" alt="" class="card" id="card20" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/21.jpg" alt="" class="card" id="card21" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/22.jpg" alt="" class="card" id="card22" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/23.jpg" alt="" class="card" id="card23" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/24.jpg" alt="" class="card" id="card24" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/25.jpg" alt="" class="card" id="card25" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/26.jpg" alt="" class="card" id="card26" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/27.jpg" alt="" class="card" id="card27" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/28.jpg" alt="" class="card" id="card28" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/29.jpg" alt="" class="card" id="card29" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/30.jpg" alt="" class="card" id="card30" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/31.jpg" alt="" class="card" id="card31" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/32.jpg" alt="" class="card" id="card32" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/33.jpg" alt="" class="card" id="card33" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/34.jpg" alt="" class="card" id="card34" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/35.jpg" alt="" class="card" id="card35" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/36.jpg" alt="" class="card" id="card36" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/37.jpg" alt="" class="card" id="card37" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/38.jpg" alt="" class="card" id="card38" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/39.jpg" alt="" class="card" id="card39" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/40.jpg" alt="" class="card" id="card40" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/41.jpg" alt="" class="card" id="card41" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/42.jpg" alt="" class="card" id="card42" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/43.jpg" alt="" class="card" id="card43" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/44.jpg" alt="" class="card" id="card44" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/45.jpg" alt="" class="card" id="card45" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/46.jpg" alt="" class="card" id="card46" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/47.jpg" alt="" class="card" id="card47" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/48.jpg" alt="" class="card" id="card48" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/49.jpg" alt="" class="card" id="card49" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/50.jpg" alt="" class="card" id="card50" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/51.jpg" alt="" class="card" id="card51" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/52.jpg" alt="" class="card" id="card52" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/53.jpg" alt="" class="card" id="card53" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/54.jpg" alt="" class="card" id="card54" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/55.jpg" alt="" class="card" id="card55" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/56.jpg" alt="" class="card" id="card56" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/57.jpg" alt="" class="card" id="card57" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/58.jpg" alt="" class="card" id="card58" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/59.jpg" alt="" class="card" id="card59" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/60.jpg" alt="" class="card" id="card60" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/61.jpg" alt="" class="card" id="card61" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/62.jpg" alt="" class="card" id="card62" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/63.jpg" alt="" class="card" id="card63" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/64.jpg" alt="" class="card" id="card64" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/65.jpg" alt="" class="card" id="card65" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/66.jpg" alt="" class="card" id="card66" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/67.jpg" alt="" class="card" id="card67" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/68.jpg" alt="" class="card" id="card68" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/69.jpg" alt="" class="card" id="card69" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/70.jpg" alt="" class="card" id="card70" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/71.jpg" alt="" class="card" id="card71" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/72.jpg" alt="" class="card" id="card72" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/73.jpg" alt="" class="card" id="card73" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/74.jpg" alt="" class="card" id="card74" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/75.jpg" alt="" class="card" id="card75" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/76.jpg" alt="" class="card" id="card76" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/77.jpg" alt="" class="card" id="card77" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/78.jpg" alt="" class="card" id="card78" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/79.jpg" alt="" class="card" id="card79" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/80.jpg" alt="" class="card" id="card80" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/81.jpg" alt="" class="card" id="card81" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/82.jpg" alt="" class="card" id="card82" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/83.jpg" alt="" class="card" id="card83" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/84.jpg" alt="" class="card" id="card84" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/85.jpg" alt="" class="card" id="card85" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/86.jpg" alt="" class="card" id="card86" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+            <div class="tooltip-container">
+                <img src="./imgs/87.jpg" alt="" class="card" id="card87" loading="lazy">
+                <span class="tooltip-text poppins"></span>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
