@@ -87,7 +87,16 @@ body {
     font-style: oblique;
 }
 
+form{
+    width: 443px;
+}
+
+h1 {
+    width: fit-content;
+}
+
 p {
+    width: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #B17071;

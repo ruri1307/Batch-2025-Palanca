@@ -108,13 +108,18 @@ document.getElementById("msg-form").addEventListener("submit", function (e) {
 
     fetch("https://script.google.com/macros/s/AKfycbz7mEOsksMUQBxsNUuaS0vlpzOOaQemgppHAf6y1zduF-pbYI4wt7b-QfxINKka_Iig/exec", {
         method: "POST",
-        body: JSON.stringify({"name":document.getElementById("name").value,  "msg":document.getElementById("msg").value})
+        body: JSON.stringify({
+            "receiver":namelist[card_number - 1],
+            "sender":document.getElementById("name").value,  
+            "msg":document.getElementById("msg").value
+        })
         }
     )
     .then(response => response.json())
     .then(data => {
         console.log("Success:", data);
         alert("Message sent successfully!");
+        document.getElementById("msg").value = "";
     })
     .catch(error => {
         console.error("Error:", error);
