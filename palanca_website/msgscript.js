@@ -102,3 +102,23 @@ img_container.setAttribute("src", "./imgs/" + String(card_number) + ".jpg");
 img_container.setAttribute("alt", namelist[card_number - 1])
 
 document.title = "Message for " + namelist[card_number - 1].split(' ')[0] + ", " + namelist[card_number - 1].split(' ')[1]
+
+document.getElementById("msg-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    fetch("https://script.google.com/macros/s/AKfycbz7mEOsksMUQBxsNUuaS0vlpzOOaQemgppHAf6y1zduF-pbYI4wt7b-QfxINKka_Iig/exec", {
+        method: "POST",
+        body: JSON.stringify({"name":document.getElementById("name").value,  "msg":document.getElementById("msg").value})
+        }
+    )
+    .then(response => response.json())
+    .then(data => {
+        console.log("Success:", data);
+        alert("Message sent successfully!");
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Oops! Something went wrong.");
+    });
+    
+})

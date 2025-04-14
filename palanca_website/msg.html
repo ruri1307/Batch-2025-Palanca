@@ -23,12 +23,14 @@
     <div class="main">
         <img id="settable-img" src="" alt="" class="picture">
         <div class="hero">
-            <h1 class="hero-text">para sa pag-asa ng bayan...</h1>
-            <p class="poppins">Name (Optional)</p>
-            <input class="poppines" type="text">
-            <p class="poppins">Message</p>
-            <textarea name="palanca-msg"></textarea>
-            <input class="poppins" type="submit" value="Send">
+            <form id="msg-form" autocomplete="off" action="">
+                <h1 class="hero-text">para sa pag-asa ng bayan...</h1>
+                <p class="poppins">Name (Optional)</p>
+                <input id="name" class="poppins" type="text" autocomplete="name">
+                <p class="poppins">Message</p>
+                <textarea id="msg" class="poppins"></textarea>
+                <button class="poppins" type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./msgscript.js"></script>
