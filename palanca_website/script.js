@@ -99,7 +99,6 @@ const namelist = [
 for (let index = 0; index < cardlist.length; index++) {
 
     const element = cardlist[index];
-    const element_tooltip = hoverlist[index];
 
     function messageRedirect(){
         console.log(element.id);
@@ -107,7 +106,6 @@ for (let index = 0; index < cardlist.length; index++) {
     }
     
     element.setAttribute("alt", namelist[index]);
-    element_tooltip.innerText = namelist[index].slice(0, (namelist[index].length) - 2);
     element.addEventListener('click', messageRedirect);
 }
 
