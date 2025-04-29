@@ -151,3 +151,10 @@ const tutorial = document.getElementsByClassName('poppup')[0];
 tutorial.addEventListener('click', function(){
     tutorial.style.display = 'none';
 });
+
+
+if (!localStorage.getItem('firstVisit')) {
+    localStorage.setItem('firstVisit', 'false');
+} else {
+    tutorial.style.display = 'none';
+}
