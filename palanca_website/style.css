@@ -143,6 +143,10 @@ main {
     z-index: 0;
 }
 
+.card:focus {
+    border: 2px #FFFFFF solid;
+}
+
 .tooltip-container {
     position: relative;
     display: flex;

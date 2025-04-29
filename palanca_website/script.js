@@ -125,7 +125,14 @@ function search(){
     }
     index++;
     if (index != 0 && match !=''){
-        window.location.hash = 'card' + String(index);
+        document.getElementById('card' + index).scrollIntoView({
+            behavior: 'smooth',     
+            block: 'center'
+          });
+        setTimeout(() => {
+           window.scrollBy({ top: 270.5, behavior: 'smooth' }); 
+        }, 0);
+        document.getElementsByClassName('card')[index - 1].focus();
     } else {
         alert('Not Found!');
     }
