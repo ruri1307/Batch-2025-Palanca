@@ -20,7 +20,7 @@ body {
 
 #navbar {
     position: sticky;
-    z-index: 999;
+    z-index: 500;
     top: 0px;
     padding: 12px 24px;
 
@@ -58,12 +58,30 @@ body {
 }
 
 .poppup {
-    z-index: 2;
-    background-color: #6E6E6E;
-    opacity: 50%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.poppup > img {
+    height: auto;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-top: 27.5px;
+}
+
+.poppup > p {
+    text-align: center;
+    margin: 10px auto;
+    color: #FFFFFF;
 }
 
 main {
+    position: relative;
     display: flex;
     padding: 64px 0;
 
@@ -73,7 +91,7 @@ main {
 
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hero {
@@ -93,7 +111,6 @@ main {
 .search-cont {
     display: flex;
     justify-content: center;
-
     gap: 24px;
 }
 
