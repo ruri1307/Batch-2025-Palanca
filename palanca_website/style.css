@@ -57,6 +57,12 @@ body {
     font-style: oblique;
 }
 
+.poppup {
+    z-index: 2;
+    background-color: #6E6E6E;
+    opacity: 50%;
+}
+
 main {
     display: flex;
     padding: 64px 0;
@@ -67,6 +73,7 @@ main {
 
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .hero {
