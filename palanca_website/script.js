@@ -146,3 +146,8 @@ function search(){
 
 searchbtn.addEventListener('click', search);
 
+const tutorial = document.getElementsByClassName('poppup')[0];
+
+tutorial.addEventListener('click', function(){
+    tutorial.style.display = 'none';
+});
