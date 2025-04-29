@@ -105,6 +105,10 @@ main {
     font-size: 16px;
 }
 
+#search-bar:focus {
+    outline: none;
+}
+
 #search-btn {
     padding: 0px 35px;
     background-color: #FFFFFF;
@@ -144,6 +148,7 @@ main {
 }
 
 .card:focus {
+    outline: none;
     border: 2px #FFFFFF solid;
 }
 

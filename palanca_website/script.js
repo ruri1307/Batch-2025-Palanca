@@ -114,17 +114,23 @@ for (let index = 0; index < cardlist.length; index++) {
 const searchbtn = document.getElementById('search-btn');
 const searchbar = document.getElementById('search-bar');
 
+searchbar.addEventListener("keydown", function(e) {
+    if (e.key == "Enter") {
+        search();
+    }
+})
+
 function search(){
     match = ''
     index = 0;
     for (index = 0; index < namelist.length; index++){
-        if (namelist[index].includes(searchbar.value.toUpperCase())){
-            match = searchbar.value;
+        if (namelist[index].includes(searchbar.value.trim().toUpperCase())){
+            match = searchbar.value.trim();
             break;
         }
     }
     index++;
-    if (index != 0 && match !=''){
+    if (match !=''){
         document.getElementById('card' + index).scrollIntoView({
             behavior: 'smooth',     
             block: 'center'
@@ -133,7 +139,7 @@ function search(){
            window.scrollBy({ top: 270.5, behavior: 'smooth' }); 
         }, 0);
         document.getElementsByClassName('card')[index - 1].focus();
-    } else {
+    } else if (searchbar.value.trim() != "") {
         alert('Not Found!');
     }
 }
