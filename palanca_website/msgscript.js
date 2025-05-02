@@ -287,9 +287,11 @@ img_container.setAttribute("alt", namelist[card_number - 1])
 
 document.title = "Message for " + namelist[card_number - 1];
 
+const btn = document.getElementById("submit-btn");
+
 document.getElementById("msg-form").addEventListener("submit", function (e) {
     e.preventDefault();
-
+    btn.disabled = true;
     fetch("https://script.google.com/macros/s/AKfycbz7mEOsksMUQBxsNUuaS0vlpzOOaQemgppHAf6y1zduF-pbYI4wt7b-QfxINKka_Iig/exec", {
         method: "POST",
         body: JSON.stringify({
@@ -304,10 +306,12 @@ document.getElementById("msg-form").addEventListener("submit", function (e) {
         console.log("Success:", data);
         alert("Message sent successfully!");
         document.getElementById("msg").value = "";
+        btn.disabled = false;
     })
     .catch(error => {
         console.error("Error:", error);
         alert("Oops! Something went wrong.");
+        btn.disabled = false;
     });
     
 })
