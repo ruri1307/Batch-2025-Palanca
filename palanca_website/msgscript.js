@@ -101,7 +101,7 @@ const img_container = document.getElementById("settable-img");
 img_container.setAttribute("src", "./msg_imgs/" + String(card_number) + ".webp");
 img_container.setAttribute("alt", namelist[card_number - 1])
 
-document.title = "Message for " + namelist[card_number - 1].split(' ')[0] + ", " + namelist[card_number - 1].split(' ')[1]
+document.title = "Message for " + namelist[card_number - 1];
 
 document.getElementById("msg-form").addEventListener("submit", function (e) {
     e.preventDefault();
