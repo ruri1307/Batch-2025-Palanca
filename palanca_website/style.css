@@ -68,7 +68,7 @@ body {
 
 .poppup > img {
     height: auto;
-    width: 1200px;
+    width: 80vw;
     display: flex;
     margin: auto;
     margin-top: 27.5px;
