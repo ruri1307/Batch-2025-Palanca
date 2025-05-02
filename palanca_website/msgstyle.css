@@ -31,7 +31,6 @@ body {
 #navbar > div {
     display: flex;
     gap: 4px;
-
     justify-content: space-between;
     align-items: center;
 }
@@ -42,19 +41,26 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 14px;
-
     border-radius: 50%;
 }
 
 .nav-text {
     font-size: 18px;
     color: #DC9B4B;
-
     font-weight: 500;
     font-style: oblique;
 }
 
 .main {
+    position: relative;  /* Create stacking context for the image and text */
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+#image_container {
+    position: relative;  /* Create stacking context for the image and text */
     width: fit-content;
     height: fit-content;
     margin: auto;
@@ -62,13 +68,34 @@ body {
 }
 
 .picture {
+    position: relative;  /* Image should be positioned */
+    z-index: 1;  /* Image stays behind the text */
     width: 600px;
     height: 800px;
     margin-top: 63px;
     margin-right: 41px;
-
     object-fit: cover;
     aspect-ratio: 3/4;
+}
+
+#img_container > p {
+    position: absolute;  /* Absolutely position p on top of the image */
+    z-index: 10;  /* Higher z-index to place it above the image */
+    left: 25%;  /* Center text horizontally */
+    transform: translate(-50%, -50%);  /* Exact centering */
+}
+
+#section {
+    color: #AAAAAA;
+    top: 90%;
+    font-weight: 400;
+    font-size: 13.66px;
+}
+
+#name {
+    color: white;
+    top: 87%;
+    font-size: 25.37px;
 }
 
 .hero {
@@ -81,12 +108,11 @@ body {
 
 .hero-text {
     color: #DC9B4B;
-
     font-weight: 500;
     font-style: oblique;
 }
 
-form{
+form {
     width: 443px;
 }
 
