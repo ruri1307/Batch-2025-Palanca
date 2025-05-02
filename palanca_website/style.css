@@ -148,6 +148,7 @@ main {
 
 #search-btn:hover {
     background-color: #DEDEDE;
+    cursor: pointer;
 }
 
 .card-cont{
