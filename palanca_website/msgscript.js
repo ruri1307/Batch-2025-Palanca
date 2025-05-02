@@ -275,7 +275,7 @@ const sectionlist = [ //in the same order as namelist
 
 const card_number = document.location.href.split('?')['1'].split('&')[0].split('=')[1];
 
-const name_container = document.getElementById("name");
+const name_container = document.getElementById("display_name");
 const section_container = document.getElementById("section");
 const img_container = document.getElementById("settable-img");
 
