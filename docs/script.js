@@ -4,6 +4,12 @@ timeTillGrad = Math.round((graduationDate-currentDate)/(1000 * 60 * 60 * 24));
 
 document.getElementById('days').innerText = (String(timeTillGrad) + ' days...');
 
+const to_home = document.getElementsByClassName("nav-logo")[0];
+
+to_home.addEventListener("click", function() {
+    window.location = "./";
+});
+
 const cardlist = document.getElementsByClassName('card');
 const hoverlist = document.getElementsByClassName('tooltip-text');
 const namelist = [
