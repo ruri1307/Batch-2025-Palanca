@@ -51,6 +51,10 @@ body {
     font-style: oblique;
 }
 
+.nav-logo {
+    cursor: pointer;
+}
+
 .main {
     position: relative;  /* Create stacking context for the image and text */
     width: fit-content;
