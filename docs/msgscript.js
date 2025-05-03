@@ -4,6 +4,12 @@ timeTillGrad = Math.round((graduationDate-currentDate)/(1000 * 60 * 60 * 24));
 
 document.getElementById('days').innerText = (String(timeTillGrad) + ' days...');
 
+const to_home = document.getElementsByClassName("nav-logo")[0];
+
+to_home.addEventListener("click", function() {
+    window.location = "./";
+});
+
 const namelist = [
     'ALBARRACIN, KARL GABRIEL D.',
     'ALCOMENDRAS, XHUN EXHAEL Y.',
@@ -271,7 +277,6 @@ const sectionlist = [ //in the same order as namelist
     'Helium • Photon • Nazarea • Rigel',
     'Quartz • Freesia • Krypton • Graviton • Muriel • Rigel',
 ]
-
 
 const card_number = document.location.href.split('?')['1'].split('&')[0].split('=')[1];
 

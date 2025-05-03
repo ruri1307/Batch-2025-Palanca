@@ -102,7 +102,6 @@ for (let index = 0; index < cardlist.length; index++) {
     const element_tooltip = hoverlist[index];
 
     function messageRedirect(){
-        console.log(element.id);
         window.location = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
     }
     
