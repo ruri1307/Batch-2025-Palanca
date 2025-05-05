@@ -10,7 +10,6 @@
 body {
     margin: 0px;
     background-color: #28030B;
-    padding-bottom: 61px;
     min-height: 100vh;
     max-width: 100vw;
 }
@@ -57,57 +56,59 @@ body {
 
 .main {
     position: relative;  /* Create stacking context for the image and text */
-    width: fit-content;
-    height: fit-content;
+    max-width: 100vw;
+    max-height: calc(100vh - 74px);
+    min-height: calc(100vh - 74px);
     margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
 }
 
-#image_container {
-    position: relative;  /* Create stacking context for the image and text */
+#img-cont {
+    position: relative;  
     width: fit-content;
-    height: fit-content;
-    margin: auto;
-    display: flex;
+    max-height: 620px;
+}
+
+#img-cont::after {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #11111900 81.54%, #111119e6 94.06%);
+    content: '';
+    z-index: 1;
 }
 
 .picture {
-    position: relative;  /* Image should be positioned */
-    z-index: 1;  /* Image stays behind the text */
-    width: 600px;
-    height: 800px;
-    margin-top: 63px;
-    margin-right: 41px;
+    position: relative;
+    z-index: 1;  
+    height: 620px;
     object-fit: cover;
     aspect-ratio: 3/4;
 }
 
-#img_container > p {
-    position: absolute;  /* Absolutely position p on top of the image */
-    z-index: 10;  /* Higher z-index to place it above the image */
-    left: 25%;  /* Center text horizontally */
-    transform: translate(-50%, -50%);  /* Exact centering */
+#txt-cont {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    bottom: 5.5rem;
+    z-index: 2;
 }
 
 #section {
+    font-size: 0.8rem;
     color: #AAAAAA;
-    top: 90%;
-    font-weight: 400;
-    font-size: 13.66px;
 }
 
-#display_name {
-    color: white;
-    top: 87%;
-    font-size: 25.37px;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px;
-    padding-top: 177px;
-    padding-left: 107px;
+#display-name {
+    font-size: 1.75rem;
+    color: #FFFFFF;
 }
 
 .hero-text {
@@ -124,14 +125,20 @@ h1 {
     width: fit-content;
 }
 
-p {
+form p {
     width: fit-content;
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: #B17071;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
+    flex-direction: column;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
 }
 
 input[type="text"] {
@@ -154,7 +161,6 @@ textarea {
     padding: 20px;
     color: #B17071;
     font-size: 16px;
-    margin-bottom: 48px;
     resize: none;
 }
 
