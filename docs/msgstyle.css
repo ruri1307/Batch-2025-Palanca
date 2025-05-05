@@ -55,7 +55,7 @@ body {
 }
 
 .main {
-    position: relative;  /* Create stacking context for the image and text */
+    position: relative;  
     max-width: 100vw;
     max-height: calc(100vh - 74px);
     min-height: calc(100vh - 74px);
@@ -154,7 +154,7 @@ input[type="text"] {
 
 textarea {
     width: 400px;
-    height: 320px;
+    height: 300px;
     background-color: #38090F;
     border: #B17071 1.5px solid;
     border-radius: 8px;

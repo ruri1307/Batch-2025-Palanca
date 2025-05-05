@@ -144,6 +144,7 @@ function search(){
            window.scrollBy({ top: 270.5, behavior: 'smooth' }); 
         }, 0);
         document.getElementsByClassName('card')[index - 1].focus();
+        searchbar.value = "";
     } else if (searchbar.value.trim() != "") {
         alert('Not Found!');
     }
@@ -157,9 +158,11 @@ tutorial.addEventListener('click', function(){
     tutorial.style.display = 'none';
 });
 
-
 if (!localStorage.getItem('firstVisit')) {
     localStorage.setItem('firstVisit', 'false');
-} else {
-    tutorial.style.display = 'none';
-}
+    tutorial.style.display = 'flex';
+} 
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});

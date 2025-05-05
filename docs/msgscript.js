@@ -320,3 +320,7 @@ document.getElementById("msg-form").addEventListener("submit", function (e) {
     });
     
 })
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
