@@ -18,7 +18,6 @@ body {
 #navbar {
     position: sticky;
     z-index: 500;
-    padding: 12px 24px;
 
     background-color: #320710;
 
@@ -36,8 +35,6 @@ body {
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 14px;
@@ -46,7 +43,6 @@ body {
 }
 
 .nav-text {
-    font-size: 18px;
     color: #DC9B4B;
 
     font-weight: 500;
@@ -107,6 +103,7 @@ main {
     font-weight: 500;
     font-style: oblique;
 }
+
 .search-cont {
     display: flex;
     justify-content: center;
@@ -114,7 +111,6 @@ main {
 }
 
 #search-bar {
-    height: 48px;
     width: 400px;
 
     padding: 0px 20px;
@@ -123,9 +119,7 @@ main {
     color: #B17071;
 
     border: 1.5px #B17071 solid;
-    border-radius: 8px;
-    
-    font-size: 16px;
+    border-radius: 8px;   
 }
 
 #search-bar:focus {
@@ -141,35 +135,10 @@ main {
     border-radius: 8px;
 
     font-weight: 500;
-    font-size: 16px;
 }
 
 #search-btn:hover {
     background-color: #DEDEDE;
-    cursor: pointer;
-}
-
-.card-cont{
-    display: flex;
-    padding: 0 50px;
-
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 12px;
-}
-
-.card {
-    aspect-ratio: 3/4;
-    width:150px;
-    height: 200px;
-
-    border-radius: 8px;
-    object-fit: cover;
-
-    position: relative;
-    z-index: 0;
-    transition: 150ms;
     cursor: pointer;
 }
 
@@ -182,12 +151,36 @@ main {
     border: 2px #FFFFFF solid;
 }
 
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+  }
+
+.tooltip-container:focus-within .tooltip-text {
+  visibility: visible;
+}
+
+.card-cont {
+    display: flex;
+    padding: 0 50px;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 150ms;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+}
+
 .tooltip-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 200px;
     align-items: center;
     background-color: #000000;
     border-radius: 8px;
@@ -209,10 +202,112 @@ main {
     z-index: 1;
 }
 
-.tooltip-container:hover .tooltip-text {
-    visibility: visible;
-  }
+@media screen and (min-width: 1024px) {
+    #navbar {
+        padding: 12px 24px;
+    }
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    .nav-text {
+        font-size: 18px;
+    }
+    #search-bar {
+        height: 48px;
+        font-size: 16px;
+    }
+    #search-btn {
+        font-size: 16px;
+    }
+    .card-cont {
+        gap: 12px;
+    }
+    .tooltip-container {
+        width: 150px;
+        height: 200px;
+    }
+    .card {
+        width: 150px;
+    } 
+}
 
-.tooltip-container:focus-within .tooltip-text {
-  visibility: visible;
+@media screen and (min-width: 382px) and (max-width: 1023px) {
+    main {
+        padding: 32px 0px;
+        gap: 24px;
+    }
+    #navbar {
+        padding: 12px 24px;
+    }
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    .nav-text {
+        font-size: 18px;
+    }
+    .hero-text {
+        font-size: 1.75rem;
+    }
+    #search-bar {
+        height: 3rem;
+        width: 65vw;
+        font-size: 16px;
+    }
+    #search-btn {
+        display: none;
+    }
+    .card-cont {
+        gap: 12px;
+        overflow-y: auto;
+        height: 69vh;
+    }
+    .tooltip-container {
+        width: 135px;
+        height: 180px;
+    }
+    .card {
+        width: 135px;
+    } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 381px) {
+    main {
+        padding: 32px 0px;
+        gap: 24px;
+    }
+    #navbar {
+        padding: 12px 24px;
+    }
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    .nav-text {
+        font-size: 18px;
+    }
+    .hero-text {
+        font-size: 1.75rem;
+    }
+    #search-bar {
+        height: 3rem;
+        width: 65vw;
+        font-size: 16px;
+    }
+    #search-btn {
+        display: none;
+    }
+    .card-cont {
+        gap: 12px;
+        overflow-y: auto;
+        height: 69vh;
+    }
+    .tooltip-container {
+        width: 250px;
+        height: 333.33px;
+    }
+    .card {
+        width: 250px;
+    } 
 }
