@@ -107,15 +107,16 @@ const nomiddleinitial = [
     33,
     72
 ]
-const notildenames = {
-    'CANADA, RYLLI FRANCIS C.': 12,
-    'CANO, MARIA ELIZA P.': 13,
-    'DANAS, THOMAS JACOB P.': 21,
-    'HEYROSA, LOURD ONIN B.': 36,
-    'MONTECLARO, LOUISE NINA B.': 57,
-    'PATINO, JANA RAIZA F.': 64,
-    'RINA, JULIA FRANCESCA C.': 71
-}
+const notildenames = [
+    ['CANADA, RYLLI FRANCIS C.', 12],
+    ['CANO, MARIA ELIZA P.', 13],
+    ['DANAS, THOMAS JACOB P.', 21],
+    ['HEYROSA, LOURD ONIN B.', 36],
+    ['MONTECLARO, LOUISE NINA B.', 57],
+    ['PATINO, JANA RAIZA F.', 66],
+    ['RINA, JULIA FRANCESCA C.', 71]
+]
+
 
 for (let index = 0; index < cardlist.length; index++) {
 
@@ -147,6 +148,15 @@ function search(){
         if (namelist[index].includes(searchbar.value.trim().toUpperCase())){
             match = searchbar.value.trim();
             break;
+        }
+    }
+    if (match == ''){
+        for (index = 0; index < notildenames.length; index++){
+            if (notildenames[index][0].includes(searchbar.value.trim().toUpperCase())){
+                match = searchbar.value.trim();
+                index = notildenames[index][1];
+                break;
+            }
         }
     }
     index++;
