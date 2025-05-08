@@ -232,11 +232,11 @@ main {
     } 
 }
 
-@media screen and (min-width: 396px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     body {
         max-height: 100vh;
         overflow: hidden;
-        background-color: red;
+        /* background-color: greenyellow; */
     }
     main {
         padding: 32px 0px;
@@ -253,7 +253,10 @@ main {
         font-size: 18px;
     }
     .hero-text {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 100%;
+        padding: 0 16px;
     }
     #search-bar {
         height: 3rem;
@@ -264,56 +267,11 @@ main {
         display: none;
     }
     .card-cont {
-        gap: 12px;
-        overflow-y: auto;
+        justify-content: space-evenly;
+        gap: 8px;
+        overflow-y: scroll;
         height: 69vh;
-    }
-    .tooltip-container {
-        width: 135px;
-        height: 180px;
-    }
-    .card {
-        width: 135px;
-    } 
-}
-
-@media screen and (min-width: 320px) and (max-width: 395px) {
-    body {
-        max-height: 100vh;
-        overflow: hidden;
-        background-color: greenyellow;
-    }
-    main {
-        padding: 32px 0px;
-        gap: 24px;
-    }
-    #navbar {
-        padding: 12px 24px;
-    }
-    #logo {
-        width: 50px;
-        height: 50px;
-    }
-    .nav-text {
-        font-size: 18px;
-    }
-    .hero-text {
-        font-size: 1.75rem;
-    }
-    #search-bar {
-        height: 3rem;
-        width: 65vw;
-        font-size: 16px;
-    }
-    #search-btn {
-        display: none;
-    }
-    .card-cont {
-        justify-content: space-between;
-        row-gap: 12px;
-        overflow-y: auto;
-        height: 69vh;
-        padding: 0 32px;
+        padding: 0 16px;
     }
     .card-cont::-webkit-scrollbar {
         display: none;
@@ -322,8 +280,12 @@ main {
         display: none;
     }
     .tooltip-container {
-        width: 150px;
+        flex-shrink: 1;
+        width: 100%;
+        max-width: 150px;
+        min-width: 100px;
         aspect-ratio: 3/4;
+        justify-self: center;
     }
     .tooltip-container::after {
         position: absolute;
@@ -331,6 +293,7 @@ main {
         height: 100%;
         width: 100%;
         z-index: 1;
+        pointer-events: none;
 
         border-radius: 8px;
         background: linear-gradient(180deg, #11111900 65%, #111119e6 90%);
@@ -342,12 +305,15 @@ main {
         z-index: 2;
         
         font-family: "Lora", "Cambria Math", 'Times New Roman', Times, serif;
-        font-size: 1px;
+        font-size: 12px;
 
         background-color: transparent !important;
         visibility: visible;
+
+        user-select: none;
+        pointer-events: none;
     }
     .card {
-        width: 150px;
+        width: 100%;
     } 
 }
