@@ -282,7 +282,7 @@ main {
     }
 
     .card-cont {
-        padding: 0;
+        padding: 0 16;
         /* box-sizing: border-box; */
 
         border-radius: 8px;
