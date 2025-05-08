@@ -20,7 +20,7 @@ const namelist = [
     'BARIRING, ANGELICA SHANE O.',
     'BARRO, ZHANE ERICA C.',
     'BASIO, CHRISTELLE KAYE A.',
-    'BAUTISTA, ANGELO PHILIIP A.',
+    'BAUTISTA, ANGELO PHILLIP A.',
     'BAYA, RON HERMAN C.',
     'BOLTIADOR, RAINFIALA DAXEN D.',
     'CAINTIC, CZAR KENZO J.',
@@ -30,23 +30,23 @@ const namelist = [
     'CARAMPATAN, ARCHY ANGAELO B.',
     'CATACUTAN, SHAWN R.',
     'CHATTO, THRESIA MAERIN L.',
-    'CLARION, ALES MARIYA X.',
+    'CLARION, ALES MARIYA',
     'COMENDADOR, JOCHEBED D.',
     'CONCEPCION, ELVIRA ROSS R.',
     'COSIDO, JOHN POWELL C.',
     'DAÑAS, THOMAS JACOB P.',
-    'DE, GUZMAN SEBASTIAN LUIS F.',
+    'DE GUZMAN, SEBASTIAN LUIS F.',
     'DEGALA, SHANEL KYLE V.',
-    'DINALO, KAERYN A.',
+    'DINALO, KERYN A.',
     'DIZON, MAEVE E.',
     'DUMAYAC, JESS N.',
     'DURANA, JOHN CEDRIC C.',
     'EBOA, JOHN JOSHUA J.',
     'EMBATE, DOMINIC RHOWEL A.',
     'EURAOBA, DAVID CHRISTIAN D.',
-    'GALAPON, CHRISTIAN  X.',
+    'GALAPON, CHRISTIAN MELLE',
     'GALLOGO, CHRISTIAN Q.',
-    'GETIGAN, DWAYNE JUNE X.',
+    'GETIGAN, DWAYNE JUNE',
     'GOCOTANO, ALEXANDRA YESHA B.',
     'HALASAN, JOEI HAVEN L.',
     'HEYROSA, LOURD OÑIN B.',
@@ -64,7 +64,7 @@ const namelist = [
     'LLANTO, ZENDRICK RHYSS A.',
     'LUARDO, ARABELLA S.',
     'LUMBO, EDUARD CHRIS A.',
-    'MAR, CAIRISTONA REBECCA G.',
+    'MAR, CAIRISTIONA REBECCA G.',
     'MERCADO, NICOLE AIM D.',
     'MOCOY, CHIARA MARTELLA J.',
     'MONREAL, REX ANGELO T.',
@@ -85,7 +85,7 @@ const namelist = [
     'QUIMADA, DEVONNE KLAUD J.',
     'RACOMA, BHOMEL J.',
     'RIÑA, JULIA FRANCESCA C.',
-    'ROSOLADA, DASHA VEI X.',
+    'ROSOLADA, DASHA VEI',
     'SAAVEDRA, JULIVER V.',
     'SAMARES, FRANCES JAMIE F.',
     'SOLENG, YEONA ELLICE L.',
@@ -101,6 +101,21 @@ const namelist = [
     'VILLEGAS, TRISTAN JOSHUEL G.',
     'YANKIN, MARY MARGARET A.'
 ];
+const nomiddleinitial = [
+    17,
+    31,
+    33,
+    72
+]
+const notildenames = {
+    'CANADA, RYLLI FRANCIS C.': 12,
+    'CANO, MARIA ELIZA P.': 13,
+    'DANAS, THOMAS JACOB P.': 21,
+    'HEYROSA, LOURD ONIN B.': 36,
+    'MONTECLARO, LOUISE NINA B.': 57,
+    'PATINO, JANA RAIZA F.': 64,
+    'RINA, JULIA FRANCESCA C.': 71
+}
 
 for (let index = 0; index < cardlist.length; index++) {
 
@@ -112,7 +127,7 @@ for (let index = 0; index < cardlist.length; index++) {
     }
     
     element.setAttribute("alt", namelist[index]);
-    element_tooltip.innerText = namelist[index].slice(0, (namelist[index].length) - 2);
+    element_tooltip.innerText = nomiddleinitial.includes(index) ? namelist[index] : namelist[index].slice(0, (namelist[index].length) - 2);
     element.addEventListener('click', messageRedirect);
 }
 
