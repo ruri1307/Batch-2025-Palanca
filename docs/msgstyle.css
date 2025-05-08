@@ -67,7 +67,7 @@ body {
 }
 
 #img-cont {
-    position: relative;  
+    position: relative;
     width: fit-content;
     max-height: 620px;
 }
@@ -80,6 +80,7 @@ body {
     background: linear-gradient(180deg, #11111900 81.54%, #111119e6 94.06%);
     content: '';
     z-index: 1;
+    border-radius: 12px;
 }
 
 .picture {
@@ -88,6 +89,7 @@ body {
     height: 620px;
     object-fit: cover;
     aspect-ratio: 3/4;
+    border-radius: 12px;
 }
 
 #txt-cont {
