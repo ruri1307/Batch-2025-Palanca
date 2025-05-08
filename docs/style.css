@@ -234,14 +234,14 @@ main {
 
 @media screen and (max-width: 1023px) {
     body {
+        display: flex;
+        flex-direction: column;
         max-height: 100vh;
+
         overflow: hidden;
         /* background-color: greenyellow; */
     }
-    main {
-        padding: 32px 0px;
-        gap: 24px;
-    }
+
     #navbar {
         padding: 12px 24px;
     }
@@ -251,6 +251,20 @@ main {
     }
     .nav-text {
         font-size: 18px;
+    }
+
+    main {
+        flex-grow: 0;
+        justify-content: start;
+        gap: 0;
+        padding: 0 0 16px 0;
+
+        overflow: hidden;
+    }
+
+    .hero {
+        flex-grow: 1;
+        padding: 32px 0 16px 0
     }
     .hero-text {
         font-size: 1.5rem;
@@ -266,12 +280,16 @@ main {
     #search-btn {
         display: none;
     }
+
     .card-cont {
+        padding: 0;
+        /* box-sizing: border-box; */
+
+        border-radius: 8px;
+        
         justify-content: space-evenly;
         gap: 8px;
         overflow-y: scroll;
-        height: 69vh;
-        padding: 0 16px;
     }
     .card-cont::-webkit-scrollbar {
         display: none;
