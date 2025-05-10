@@ -8,7 +8,7 @@ const to_home = document.getElementsByClassName("nav-logo")[0];
 
 to_home.addEventListener("click", function() {
     window.location = "./";
-    setTimeout(function(){document.location.href = "./";},250);
+    setTimeout(function(){document.location.assign("./");},250);
 });
 
 const namelist = [
