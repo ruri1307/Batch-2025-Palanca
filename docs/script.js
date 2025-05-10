@@ -125,6 +125,7 @@ for (let index = 0; index < cardlist.length; index++) {
 
     function messageRedirect(){
         window.location = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
+        setTimeout(function(){document.location.href = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));},250);
     }
     
     element.setAttribute("alt", namelist[index]);
