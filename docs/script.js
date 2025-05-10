@@ -122,14 +122,12 @@ for (let index = 0; index < cardlist.length; index++) {
 
     const element = cardlist[index];
     const element_tooltip = hoverlist[index];
-
-    function messageRedirect(){
-        location.href = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
-    }
     
     element.setAttribute("alt", namelist[index]);
     element_tooltip.innerText = nomiddleinitial.includes(index) ? namelist[index] : namelist[index].slice(0, (namelist[index].length) - 2);
-    element.addEventListener('click', messageRedirect);
+    element.addEventListener('click', function (){
+        location.href = "./msg.html?card=" + encodeURIComponent(element.id.slice(4));
+    });
 }
 
 const searchbtn = document.getElementById('search-btn');
